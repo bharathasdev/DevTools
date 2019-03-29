@@ -37,3 +37,18 @@ Live Server - Hot module Reload extension
 ## React Js
 
 ### Installing react in a simple way
+
+Method 1:
+
+npx create-react-app my-app
+
+cd my-app
+
+npm start
+
+
+Method 2:
+
+Hand coding and adding toplain htmlpage
+
+https://reactjs.org/docs/add-react-to-a-website.html
