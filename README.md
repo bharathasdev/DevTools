@@ -32,3 +32,8 @@ Live Sass Compiler - to compile saas to Css in real time
 Live Server - Hot module Reload extension
 
 ! - will give you default HTML5 Template code
+
+
+## React Js
+
+### Installing react in a simple way
