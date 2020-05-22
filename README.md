@@ -37,6 +37,12 @@ https://modernweb.com/what-every-javascript-developer-should-know-about-floating
 https://www.jacklmoore.com/notes/rounding-in-javascript/
 
 
+## Weird Javascript
+
+The below article will explain the weird part 
+
+https://github.com/denysdovhan/wtfjs#-motivation
+
 ## Node Plugins
 
 #### To setup bootstrap for a project
