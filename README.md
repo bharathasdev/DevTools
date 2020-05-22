@@ -1,5 +1,13 @@
 # DevTools - List of great tools that makes developers life easier
     This page will be updated with some interesting small tools for software developer to make their everyday job easier.
+    
+    
+## Javascript Snippets
+
+#### Best way to round the number
+
+Number(Math.round(1.005+'e2')+'e-2');
+
 
 ## Node Plugins
 
