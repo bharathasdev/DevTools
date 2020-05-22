@@ -43,6 +43,8 @@ The below article will explain the weird part
 
 https://github.com/denysdovhan/wtfjs#-motivation
 
+https://www.smashingmagazine.com/2011/05/10-oddities-and-secrets-about-javascript/
+
 ## Node Plugins
 
 #### To setup bootstrap for a project
