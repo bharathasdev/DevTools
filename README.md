@@ -75,6 +75,28 @@ Live Server - Hot module Reload extension
 
 ! - will give you default HTML5 Template code
 
+Auto close Tag
+
+Better Comments
+
+Bracket pair colorizer
+css peek
+
+ES7 react/ redux Graphql
+
+ESlint
+
+Es6 code snippet
+
+Path Intellisense
+
+Prettier Now
+
+Pretty Json
+
+Path Intellisense
+
+code Time
 
 ## React Js
 
