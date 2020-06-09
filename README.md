@@ -7,6 +7,74 @@ https://guides.github.com/features/mastering-markdown/
 
 ## Javascript Snippets
 
+#### Spread Operator
+```javascript
+
+const codeburst = 'CODEBURST'; // Line 1
+const characters = [ ...codeburst ]; // Line 2
+// [ 'C', 'O', 'D', 'E', 'B', 'U', 'R', 'S', 'T' ]
+
+```
+
+Creating copy of a new object
+
+```javascript
+const obj = { name: 'Foo', age: 22 };
+const newObj = { ...obj }
+console.log(newObj)
+// { name: 'Foo', age: 22 }
+
+```
+
+Merging to objects with spread
+
+```javascript
+
+const obj1 = { name: ‘Granny Smith’, color: ‘green’, type:’Apple’};
+const obj2 = { price: 0.20, origin: ‘France’ };
+const merge = {…obj1, …obj2};
+console.log(merge); 
+
+Result:
+
+{ 
+  name: ‘Granny Smith’,
+  color: ‘green’,
+  type:’Apple’, 
+  price: 0.20,
+  origin:’France’ 
+};
+
+```
+
+What happens if the objects to merge have common properties?
+
+If you have common properties the priority will be right to left. The object the most at the right will have priority over the one at its left and so on.
+
+```javascript
+const obj1 = { name: ‘Granny Smith’, color: ‘green’ , type:’Apple’};
+const obj2 = { name: ‘Golden Delicious’, price: 0.20, origin: ‘France’ }; 
+const merge = {…obj1, …obj2}; 
+console.log(merge); 
+{ 
+  name: ‘Golden Delicious’,
+  color: ‘green’,
+  type:’Apple’,
+  price: 0.20,
+  origin:’France’
+}; */
+
+```
+
+#### Destructuring 
+
+```javascript
+const address = [221, 'Baker Street', 'London'];
+const [ houseNo, , city ] = address;
+console.log(houseNo, city)
+// 221 'London'
+
+```
 #### Best way to round the number
 
 Issue with normal toFixed(2)
