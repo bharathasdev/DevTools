@@ -213,7 +213,21 @@ const Greet = props => {
 export default Greet
 
 ```
+### React Class Component
 
+```JavaScript
+
+import React, { Component } from 'react'
+
+class Welcome extends Component {
+  render() {
+    return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>
+  }
+}
+
+export default Welcome
+
+```
 
 ### React class component and React portal example
 
