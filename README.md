@@ -298,3 +298,23 @@ ReactDOM.render(<Parent />, appRoot);
 
 
 ```
+
+### Export default vs Named Export
+
+## default Export
+
+export default Greet; // (Greet.js)
+
+While importing the export default as shown above, we can import with any name as shown below
+
+import myGreet from "./Greet.js" // you can import with any name
+
+
+## Named Export
+
+export  Greet; // (Greet.js)
+
+While importing the named export as shown above, we can import with only with exact name within curly braces as shown below
+
+import {Greet} from "./Greet.js" // you can import with the same name between the curly braces
+
