@@ -186,3 +186,29 @@ Method 2:
 Hand coding and adding toplain htmlpage
 
 https://reactjs.org/docs/add-react-to-a-website.html
+
+
+
+### React functional component
+
+```javascript
+import React from 'react'
+
+// function Greet() {
+//   return <h1>Hello Vishwas</h1>
+// }
+
+const Greet = props => {
+  return (
+    <div>
+      <h1>
+        Hello {props.name} a.k.a {props.heroName}
+      </h1>
+      {props.children}
+    </div>
+  )
+}
+
+export default Greet
+
+```
