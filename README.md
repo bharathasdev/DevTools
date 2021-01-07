@@ -193,11 +193,12 @@ https://reactjs.org/docs/add-react-to-a-website.html
 
 ```javascript
 import React from 'react'
-
+// es5
 // function Greet() {
 //   return <h1>Hello Vishwas</h1>
 // }
 
+// ES6 - Arrow function
 const Greet = props => {
   return (
     <div>
