@@ -336,6 +336,14 @@ import {Greet} from "./Greet.js" // you can import with the same name between th
 
 ### React Class Component SetState, CallBack and PrevState
 
+1. Always use setState method to update state. 
+   Using the setState method will re-render the component
+   
+2. Any code that needs to be executed immediately after the SetState has to be sent as a Callback parameter(2nd Parameter)
+3. If there are multiple SetState calls the React will call all at once. Multiple setState should use prevState property within an Arrow function.
+
+Example shown below
+
 ```Javascript
 
 import React, { Component } from 'react'
