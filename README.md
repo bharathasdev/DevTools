@@ -172,6 +172,11 @@ code Time
 
 https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776
 
+## PIXI JS
+
+Tutorial for using Spine with PIXI and webpack
+https://medium.com/anvoevodin/lets-animate-your-pixijs-v5-game-with-spine-14dda65a0f41
+
 ## React Js
 
 ### Installing react in a simple way
