@@ -152,7 +152,7 @@ Better Comments
 Bracket pair colorizer
 css peek
 
-ES7 react/ redux Graphql
+ES7 react/ /redux Graphql/ GrapQL / React-Native snippets by dsznajder
 
 ESlint
 
