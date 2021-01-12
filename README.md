@@ -126,7 +126,142 @@ npm i gulp browser-sync gulp-sass --save -dev
 npm i bootstrap jquery popper.js --save
 
 
+##Important concepts of Javascript
 
+### JavaScript prototypes
+
+Every JavaScript function has a prototype property that is used to attach properties and methods. 
+This property is not enumerable. It allows the developer to attach methods or member functions to its objects. JavaScript supports inheritance only through the prototype property. In case of an inherited object, the prototype property points to the object’s parent. A common approach to attach methods to a function is to use prototypes as shown below:
+
+```Javascript
+
+function Rectangle(x, y) {
+     this._length = x;
+     this._breadth = y;
+}
+
+Rectangle.prototype.getDimensions = function () {
+     return { length : this._length, breadth : this._breadth };
+};
+
+Rectangle.prototype.setDimensions = function (len, bred) {
+     this._length = len;
+     this._breadth = bred;
+};
+
+```
+
+
+### JavaScript private properties, using closures
+JavaScript lets you define private properties by using the underscore prefix as shown in the above example. However, this does not prevent a user from directly accessing or modifying a property that is supposed to be private.
+Defining private properties using closures will help you solve this problem. The member functions that need access to private properties should be defined on the object itself. You can make private properties using closures as shown below:
+
+```Javascript
+function Rectangle(_length, _breadth) {
+
+     this.getDimensions = function () {
+     return { length : _length, breadth : _breadth };
+     };
+
+     this.setDimension = function (len,bred) {
+     _length = len;
+     _breadth = bred
+     };
+
+}
+
+```
+
+### JavaScript currying
+
+With a curried function, you can pass all of the arguments that the function is expecting and get the result, 
+or you can pass only a subset of arguments and receive a function back that waits for the rest of the arguments. 
+A simple example of a curry is given below:
+
+
+```Javascript
+var myFirstCurry = function(word) {
+     return function(user) {
+            return [word , ", " , user].join("");
+     };
+};
+
+var HelloUser = myFirstCurry("Hello");
+HelloUser("Rahul"); // Output: "Hello, Rahul"
+
+// or
+
+myFirstCurry("Hey, wassup!")("Rahul"); // Output: "Hey, wassup!, Rahul"
+
+```
+## JavaScript apply, call, and bind methods
+
+### Call
+
+```Javascript
+
+var user = {
+     name: "Rahul Mhatre",
+     whatIsYourName: function() {
+     console.log(this.name);
+     }
+};
+
+user.whatIsYourName(); // Output: "Rahul Mhatre",
+var user2 = {
+     name: "Neha Sampat"
+};
+
+user.whatIsYourName.call(user2); // Output: "Neha Sampat"
+
+```
+
+
+### Apply
+
+
+that apply is nearly the same as call. The only difference is that you pass arguments as an array and not separately. Arrays are easier to manipulate in JavaScript, opening a larger number of possibilities for working with functions. Here is an example using apply and call:
+
+```Javascript
+
+var user = {
+     greet: "Hello!",
+     greetUser: function(userName) {
+     console.log(this.greet + " " + userName);
+     }
+};
+
+var greet1 = {
+     greet: "Hola"
+};
+
+user.greetUser.call(greet1,"Rahul") // Output: "Hola Rahul"
+user.greetUser.apply(greet1,["Rahul"]) // Output: "Hola Rahul"
+
+```
+
+
+### Bind
+
+The bind method allows you to pass arguments to a function without invoking it. 
+A new function is returned with arguments bounded preceding any further arguments. Here is an example:
+
+```Javascript
+
+var user = {
+     greet: "Hello!",
+     greetUser: function(userName) {
+     console.log(this.greet + " " + userName);
+     }
+};
+
+var greetHola = user.greetUser.bind({greet: "Hola"});
+var greetBonjour = user.greetUser.bind({greet: "Bonjour"});
+
+greetHola("Rahul") // Output: "Hola Rahul"
+greetBonjour("Rahul") // Output: "Bonjour Rahul"
+
+```
 
 
 ## CSS & Preprocessor Tools, Utilities and plugins
