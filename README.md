@@ -536,3 +536,22 @@ class Counter extends Component {
 export default Counter
 
 ```
+
+
+
+# Cheat Sheets - Quick Reference
+
+### Javascript
+
+https://websitesetup.org/javascript-cheat-sheet/
+
+### CSS
+https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf
+
+### BootStrap
+
+https://websitesetup.org/bootstrap-cheat-sheet/
+
+### 
+
+https://websitesetup.org/python-cheat-sheet/
