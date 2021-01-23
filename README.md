@@ -574,6 +574,98 @@ export default Counter
 ```
 
 
+### Toggle
+```javascript
+
+const toggle = () => setOn(o => !o)
+
+```
+
+### prop drilling and Breaking a component into Multiplr
+
+Prop drilling (also called "threading") refers to the process you have to go through to get data to parts of the React Component tree. 
+Let's look at a very simple example of a stateful component (yes, it's my favorite component example):
+
+Case 1:
+
+```javascript
+
+function Toggle() {
+  const [on, setOn] = React.useState(false)
+  const toggle = () => setOn(o => !o)
+  return (
+    <div>
+      <div>The button is {on ? 'on' : 'off'}</div>
+      <button onClick={toggle}>Toggle</button>
+    </div>
+  )
+}
+
+```
+Case 2: 
+Above component split into 2 components
+
+function Toggle() {
+  const [on, setOn] = React.useState(false)
+  const toggle = () => setOn(o => !o)
+  return (
+    <Switch on ={on} onToggle = {toggle} />
+  )
+}
+
+
+function Switch({on, onToggle}){
+
+return (
+    <div>
+      <div>The button is {on ? 'on' : 'off'}</div>
+      <button onClick={onToggle}>Toggle</button>
+    </div>
+    )
+}
+
+
+Case 3 - Splitting it into further more
+
+function SwitchMessage({on}){
+
+return <div>The button is {on ? 'on' : 'off'}</div>
+   
+}
+
+function SwitchButton({onToggle}){
+
+return <button onClick={onToggle}>Toggle</button>
+   
+    
+}
+
+
+This is prop drilling. 
+To get the on state and toggle handler to the right places, we have to drill (or thread) props through the Switch component. 
+The Switch component itself doesn't actually need those values to function, but we have to accept and forward those props because its children need them.
+
+Problems with property drilling.
+
+This solves the problem of adding global variable erverywhere. everything stays in one place.
+But it is easy if stays just few level deep. But it will become more hard to track and debug if the application grows bigger and it will become very hard to drill through many layers of the componenets. Removing the property or refactoring the data at the top might brake the child components and make it very hard to change and maintain
+
+
+1. removing the unused property in the child rsults in passing unused data from top, if not removed
+2. changing the property in the top, has to be updated throught the whole tree
+3. renaming props will become difficult and neds updating all the children compoenents till the bottom.
+
+example:
+
+1. Refactor the shape of some data (ie: {user: {name: 'Joe West'}} -> {user: {firstName: 'Joe', lastName: 'West'}})
+
+2. Renaming props halfway through (ie <Toggle on={on} /> renders <Switch toggleIsOn={on} />) making keeping track of that in your brain difficult.
+
+
+Using a defaultProp for something that's actually required for the component to function properly is just hiding important errors and making things fail silently. 
+So only use defaultProps for things that are not required.
+
+Keep state as close to where it's relevant as possible to avoid prop drilling issues.
 
 # Cheat Sheets - Quick Reference
 
