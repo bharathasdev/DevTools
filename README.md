@@ -581,7 +581,13 @@ const toggle = () => setOn(o => !o)
 
 ```
 
-### prop drilling and Breaking a component into Multiplr
+### prop drilling and Breaking a component into Multiple components
+
+### Baseline
+
+Prop drilling can be a good thing, and it can be a bad thing. Following some good practices as mentioned above, you can use it as a feature to make your application more maintainable. Good luck!
+
+### What is prop drilling ?
 
 Prop drilling (also called "threading") refers to the process you have to go through to get data to parts of the React Component tree. 
 Let's look at a very simple example of a stateful component (yes, it's my favorite component example):
