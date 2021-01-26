@@ -318,6 +318,10 @@ Live Server - Hot module Reload extension
 
 Auto close Tag
 
+Auto Rename Tag
+
+marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
 Better Comments
 
 Bracket pair colorizer
