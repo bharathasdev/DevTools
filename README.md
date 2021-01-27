@@ -43,6 +43,71 @@ app.listen(PORT, () => {
 
 ## Javascript Snippets
 
+### Removing deuplicate from an Array
+
+```Javascript
+
+
+let arr = [1, 3, 5, 7, 3, 8, 1]
+
+let result1 = [];
+let result = [];
+
+let len = arr.length;
+
+// Method 1
+arr.sort();
+
+let lastval = ""
+
+for(let j = 0; j < len; j++)
+{
+	
+	if(arr[j] !== lastval){
+ 		result1.push(arr[j])
+  }
+  lastval = arr[j];
+
+}
+
+console.log("Method 1:" , result1)
+
+
+// Method 2
+
+for(let i = 0; i < len; i++)
+{
+		if(result.indexOf(arr[i]) === -1)
+    {
+    	result.push(arr[i])
+    }
+}
+console.log("Method 2:" , result);
+
+
+//  Method 3
+let obj = {};
+
+for(let i of arr)
+{
+	obj[i] = true;
+}
+
+let newArray = Object.keys(obj);
+
+console.log("Method 3", newArray);
+
+
+//  Method 4
+
+let newArray2 = new Set(arr);
+
+console.log("Method 4", [...newArray2])
+
+```
+
+
+
 #### Spread Operator
 ```javascript
 
