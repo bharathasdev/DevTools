@@ -408,6 +408,19 @@ Path Intellisense
 
 code Time
 
+Prettier - Code formatter
+
+Material Icon Theme (Philipp Kief)
+
+## React Native Extensions
+
+React-Native/React/Redux snippets for es6/es7
+EQuimper
+
+React Native Tools (Microsoft)
+
+
+
 ## CSS Links and quick Reference
 
 https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776
