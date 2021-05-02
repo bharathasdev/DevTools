@@ -5,6 +5,31 @@
 
 https://guides.github.com/features/mastering-markdown/
 
+## setup a github repo
+
+# 1. Add an existing project folder to github repo
+
+
+```javascript
+
+git remote add origin https://github.com/bharathasdev/texto.git
+git branch -M main
+git push -u origin main
+
+```
+# 2. creating a new propject folder in local and pushing it to git hub
+
+```javascript
+
+echo "# texto" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/bharathasdev/texto.git
+git push -u origin main
+
+```
 
 ## Code to setup an Express - Server - 
 
