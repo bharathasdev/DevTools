@@ -5,6 +5,7 @@
 
 https://guides.github.com/features/mastering-markdown/
 
+
 ## setup a github repo
 
 # 1. Add an existing project folder to github repo
@@ -796,3 +797,9 @@ https://websitesetup.org/bootstrap-cheat-sheet/
 ### 
 
 https://websitesetup.org/python-cheat-sheet/
+
+
+## Popular npm packages
+
+1. moment js - npm install moment (https://momentjs.com/) 
+   For formatting the date and time.
