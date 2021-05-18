@@ -46,6 +46,9 @@ git push -u origin main
 	 where  https://gitsite.com/yourusername/new-repository.git is assumed as a new repository url
  
  ```
+ Reference
+ https://medium.com/cloud-native-the-gathering/how-to-mirror-copy-an-entire-existing-git-repository-into-a-new-one-3bb8faefad9e
+ 
 
 ## Code to setup an Express - Server - 
 
