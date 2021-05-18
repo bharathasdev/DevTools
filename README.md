@@ -32,6 +32,21 @@ git push -u origin main
 
 ```
 
+# 3. Mirroring / duplicating a repo with all branches and history
+
+ ```javascript
+ 
+ // from Original repo to New repo
+ 
+ // 1. clone the original remote repository to local machine 
+ // 2. Create a new remote repository
+ // 3. From the local folder 
+ 	- cd original-repository(local)
+	$ git push --mirror https://gitsite.com/yourusername/new-repository.git
+	 where  https://gitsite.com/yourusername/new-repository.git is assumed as a new repository url
+ 
+ ```
+
 ## Code to setup an Express - Server - 
 
 ```javascript
