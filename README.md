@@ -1,14 +1,14 @@
-# DevTools - List of great tools that makes developers life easier
+## DevTools - List of great tools that makes developers life easier
     This page will be updated with some interesting small tools for software developer to make their everyday job easier.
     
-## To Master your read.md
+### To Master your read.md
 
 https://guides.github.com/features/mastering-markdown/
 
 
 ## setup a github repo
 
-# 1. Add an existing project folder to github repo
+### 1. Add an existing project folder to github repo
 
 
 ```javascript
@@ -18,7 +18,7 @@ git branch -M main
 git push -u origin main
 
 ```
-# 2. creating a new propject folder in local and pushing it to git hub
+### 2. creating a new propject folder in local and pushing it to git hub
 
 ```javascript
 
@@ -32,7 +32,7 @@ git push -u origin main
 
 ```
 
-# 3. Mirroring / duplicating a repo with all branches and history
+### 3. Mirroring / duplicating a repo with all branches and history
 
  ```javascript
  
@@ -737,6 +737,8 @@ function Toggle() {
 Case 2: 
 Above component split into 2 components
 
+```javascript
+
 function Toggle() {
   const [on, setOn] = React.useState(false)
   const toggle = () => setOn(o => !o)
@@ -756,8 +758,12 @@ return (
     )
 }
 
+```
+
 
 Case 3 - Splitting it into further more
+
+```javascript
 
 function SwitchMessage({on}){
 
@@ -772,6 +778,7 @@ return <button onClick={onToggle}>Toggle</button>
     
 }
 
+```
 
 This is prop drilling. 
 To get the on state and toggle handler to the right places, we have to drill (or thread) props through the Switch component. 
@@ -821,3 +828,26 @@ https://websitesetup.org/python-cheat-sheet/
 
 1. moment js - npm install moment (https://momentjs.com/) 
    For formatting the date and time.
+   
+   
+   
+   
+## Node JS
+
+To list the node process thats running on particular port
+
+``` Javascript
+
+lsof -i tcp:3000
+
+and to kill the process
+
+kill -9 <process id>
+
+```
+
+
+	
+	
+
+
