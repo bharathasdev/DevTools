@@ -846,6 +846,25 @@ kill -9 <process id>
 
 ```
 
+## PM2 comands
+``` Javascript
+npm  i pm2
+
+pm2 start app.js
+pm2 restart app_name
+pm2 reload app_name
+pm2 stop app_name
+pm2 delete app_name
+
+pm2 [list|ls|status]
+
+pm2 logs
+
+pm2 monit
+
+
+```
+
 
 	
 	
