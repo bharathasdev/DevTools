@@ -838,6 +838,13 @@ To list the node process thats running on particular port
 
 ``` Javascript
 
+// On Windows
+
+netstat -ano | findstr :3000
+tskill typeyourPIDhere 
+
+// on Linux or Mac
+
 lsof -i tcp:3000
 
 and to kill the process
