@@ -50,6 +50,40 @@ git push -u origin main
  https://medium.com/cloud-native-the-gathering/how-to-mirror-copy-an-entire-existing-git-repository-into-a-new-one-3bb8faefad9e
  
 
+
+#### 4. Basic Git Commands - Reference
+
+git status
+
+git diff
+
+git add -p filename
+
+commit message "Concise"
+
+body - what is different from previous
+
+git log
+
+git clone
+
+git branch branchname
+
+git checkout branchname
+
+git add filename
+
+git commit -m "hdjhjh"
+
+git push --set-upstream origin test
+
+
+git merge branchname
+
+git merge --abort
+
+git rebase branch-B
+
 ## Code to setup an Express - Server - 
 
 ```javascript
