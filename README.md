@@ -905,8 +905,21 @@ pm2 monit
 
 
 ```
+## Python - Setting virtual environment
+```
+pip install virtualenv
+
+mkdir newproj
+cd newproj
+virtualenv venv
+
+venv\scripts\activate
+
+pip install Flask
 
 
+
+```
 	
 	
 
