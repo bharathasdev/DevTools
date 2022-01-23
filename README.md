@@ -893,6 +893,11 @@ https://websitesetup.org/python-cheat-sheet/
    
    
 ## Node JS
+	
+https://blog.logrocket.com/reading-writing-json-files-nodejs-complete-tutorial/#:~:text=You%20can%20use%20the%20global%20require%20function%20to,be%20loaded%20again%20in%20the%20next%20server%20restart.
+	
+https://zellwk.com/blog/async-await-express/
+https://masteringjs.io/tutorials/express/app-get
 
 To list the node process thats running on particular port
 
