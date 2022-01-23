@@ -464,6 +464,10 @@ greetBonjour("Rahul") // Output: "Bonjour Rahul"
 
 ```
 
+	
+## Promises and Callback
+	
+https://stackoverflow.com/questions/22519784/how-do-i-convert-an-existing-callback-api-to-promises
 
 ## CSS & Preprocessor Tools, Utilities and plugins
 
