@@ -292,6 +292,10 @@ https://github.com/denysdovhan/wtfjs#-motivation
 
 https://www.smashingmagazine.com/2011/05/10-oddities-and-secrets-about-javascript/
 
+## Synchronous vs Asynchronous
+
+https://medium.com/linkit-intecs/what-is-synchronous-vs-asynchronous-in-node-js-4b45ee668e6f
+
 ## Node Plugins
 
 #### To setup bootstrap for a project
