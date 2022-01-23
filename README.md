@@ -84,6 +84,24 @@ git merge --abort
 
 git rebase branch-B
 
+## If you want a quick answer, here are the following commands to undo a git commit:
+
+Undo the last commit and do not remove the changes:
+git reset --soft HEAD~1
+
+Undo the last commit and remove the changes (from disk):
+git reset --hard HEAD~1
+
+Undo a specific commit and do not remove the changes:
+git reset --soft <commit-object-name>
+	
+Undo a specific commit and remove the changes (from disk):
+git reset --hard <commit-object-name>
+	
+Once you have fixed the git index you can now fix the GitHub repository. Only one command is needed, and it is irrelevant which method you used to undo the original commit:
+
+git push origin master --force
+
 ## Code to setup an Express - Server - 
 
 ```javascript
