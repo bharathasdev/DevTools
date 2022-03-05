@@ -952,6 +952,11 @@ pip install Flask
 
 ```
 	
+### Python and node
+
+###  How to call python script from node
+
 	
+https://medium.com/swlh/run-python-script-from-node-js-and-send-data-to-browser-15677fcf199f
 
 
