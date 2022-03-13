@@ -889,7 +889,10 @@ https://websitesetup.org/python-cheat-sheet/
 1. moment js - npm install moment (https://momentjs.com/) 
    For formatting the date and time.
    
-   
+
+## Linux vs Windows commands
+	
+https://www.geeksforgeeks.org/linux-vs-windows-commands/#:~:text=Linux%20vs%20Windows%20Commands%20%20%20%20SNo.,Moving%20a%20file%20%2026%20more%20rows%20
    
    
 ## Node JS
