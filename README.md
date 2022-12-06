@@ -134,6 +134,10 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
+	
+## Nice Article to use Axios and JSON Server
+	
+https://zetcode.com/javascript/axios/
 
 ```
 
