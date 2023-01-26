@@ -967,3 +967,67 @@ pip install Flask
 https://medium.com/swlh/run-python-script-from-node-js-and-send-data-to-browser-15677fcf199f
 
 
+
+### Ubuntu SQL commands
+
+To install mysql in ubuntu
+
+1. update packages
+sudo apt update
+
+2. Install mysql server
+sudo apt-get install mysql-server -y
+
+3. use to mysql
+sudo mysql
+
+4. create Database
+CREATE DATABASE baztestdatabase;
+
+5. show the Databases
+
+SHOW DATABASES;
+
+6. Add New User for MySQL Database
+
+CREATE USER 'zzzzz'@'localhost' IDENTIFIED BY 'xxxxxxxxxxxxxxxxxxxxxxx';
+
+7. Grant User permission for MySQL database
+
+GRANT ALL PRIVILEGES ON baztestdatabase.* TO 'zzzzz'@'localhost' WITH GRANT OPTION;
+
+To apply the database changes without reloading your MySQL service.
+
+FLUSH PRIVILEGES;
+
+8. exit from the MySQL console
+EXIT;
+
+
+
+9. Verify which authentication method each of your MySQL user account
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+10. to check my sql status
+
+sudo service mysql status
+
+11. To manage mySQL on Ubuntu
+sudo service mysql start
+sudo service mysql stop
+sudo service mysql reload
+sudo service mysql restart
+
+12. connecting to mysql through mysqlzzzzz tool
+sudo mysqlzzzzz -p -u root version
+
+13. To backup the Database
+mysqldump -u username -p database_name > database_name.sql
+
+14. To restore/import database from backup sql file, use this command:
+mysql -u username -p database_name < database_name.sql
+
+15. To Audit and trouble shoot the error
+sudo tail -f /var/log/mysql/error.log
+
