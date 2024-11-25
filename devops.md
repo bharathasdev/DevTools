@@ -1,6 +1,12 @@
 ### Dev- ops day to day commands
 
-## Ubuntu / linus
+## Docker commands
+```
+ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+
+```
+
+## Ubuntu / linux
 
 ### Ubuntu increasing the root volume size and expanding the partition
 ```
