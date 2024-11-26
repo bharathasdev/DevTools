@@ -22,3 +22,20 @@ sudo resize2fs /dev/xvda1
 
  lsblk
 ```
+
+
+
+## Mysql
+
+### To create a backup of mysql
+
+'''
+mysqldump -u root -p dbname > dbname-date.sql
+'''
+
+### To restore a backup
+
+'''
+mysql -h slotmastersbattle.c46zok4nn5q6.us-east-1.rds.amazonaws.com -u username -p dbname < sqlfilename
+
+'''
