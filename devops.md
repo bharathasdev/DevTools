@@ -9,6 +9,53 @@
 ## Ubuntu / linux
 
 ### Basic commands
+
+#### File and Directory
+ls
+cd
+pwd
+mkdir
+rm
+cp
+mv
+find
+chmod
+chown
+chgrp
+
+
+#### Text manipulation
+cat
+grep
+head
+tail
+less
+sed
+awk
+
+
+#### Process Management
+ps
+top
+kill
+systemctl
+service
+df
+du
+free
+uptime
+
+
+#### Networking
+
+ping
+curl
+ssh
+scp
+netstat
+ifconfig
+iptables
+
 ```
 mkdir
 mv
