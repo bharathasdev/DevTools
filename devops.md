@@ -16,6 +16,13 @@ cp
 rm
 rm -r
 man mv
+ssh -i <key file> <uname>@<ipaddresses>
+
+## Fedora / Amazon Linux
+sudo apt update && sudo apt upgrade
+sudo yum install docker (Fedora)
+sudo apt install docker (Ubuntu)
+
 ```
 
 ### Ubuntu increasing the root volume size and expanding the partition
