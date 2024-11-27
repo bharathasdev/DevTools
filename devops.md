@@ -8,6 +8,8 @@
 
 ## Ubuntu / linux
 
+https://medium.com/@vinodhakumara2681997/cheatsheet-linux-commands-for-devops-80be32b88656
+
 ### Basic commands
 
 #### File and Directory
