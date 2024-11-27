@@ -8,6 +8,16 @@
 
 ## Ubuntu / linux
 
+### Basic commands
+```
+mkdir
+mv
+cp
+rm
+rm -r
+man mv
+```
+
 ### Ubuntu increasing the root volume size and expanding the partition
 ```
 df -T /
