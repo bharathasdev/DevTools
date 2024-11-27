@@ -17,6 +17,30 @@ rm
 rm -r
 man mv
 ssh -i <key file> <uname>@<ipaddresses>
+history
+pwd
+whoami
+sudo su - changes the user to su
+docker --version or docker
+which docker - returns the location of the folder
+which git
+
+date
+
+vi - editor
+
+:wq - Save and Exit
+:qa! - to exit without the savings
+
+ping google.com
+ping amazon.com
+ip addr
+nslookup google.com - return the server address
+
+curl <url>
+
+wget - to download the package
+
 
 ## Fedora / Amazon Linux
 sudo apt update && sudo apt upgrade
